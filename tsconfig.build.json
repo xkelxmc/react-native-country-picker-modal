@@ -1,7 +1,8 @@
 {
   "include": [
     "src",
-    "./typings.d.ts"
+    "./typings.d.ts",
+    "./@types/**/*"
   ],
   "compilerOptions": {
     "declaration": true,

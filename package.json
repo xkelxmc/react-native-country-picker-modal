@@ -1,6 +1,6 @@
 {
   "name": "@xkelxmc/react-native-country-picker-modal",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "react-native country picker",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,6 +10,14 @@
   },
   "publishConfig": {
     "@xkelxmc:registry": "https://npm.pkg.github.com"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js",
+      "require": "./lib/index.js"
+    }
   },
   "scripts": {
     "start": "yarn config:dev && expo start",
