@@ -9,6 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/xkelxmc/react-native-country-picker-modal.git"
   },
+  "files": [
+    "lib"
+  ],
   "publishConfig": {
     "@xkelxmc:registry": "https://npm.pkg.github.com"
   },
