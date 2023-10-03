@@ -10,9 +10,6 @@ import {
 } from './types'
 import Fuse from 'fuse.js'
 
-const imageJsonUrl =
-  'https://xcarpentier.github.io/react-native-country-picker-modal/countries/'
-
 type CountryMap = { [key in CountryCode]: Country }
 
 interface DataCountry {
@@ -27,17 +24,12 @@ const localData: DataCountry = {
 export const loadDataAsync = (
   (data: DataCountry) =>
   (dataType: FlagType = FlagType.EMOJI): Promise<CountryMap> => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       switch (dataType) {
         case FlagType.FLAT:
           if (!data.imageCountries) {
-            fetch(imageJsonUrl)
-              .then((response: Response) => response.json())
-              .then((remoteData: any) => {
-                data.imageCountries = remoteData
-                resolve(data.imageCountries!)
-              })
-              .catch(reject)
+            data.imageCountries = require('./assets/data/countries.json')
+            resolve(data.imageCountries!)
           } else {
             resolve(data.imageCountries)
           }
