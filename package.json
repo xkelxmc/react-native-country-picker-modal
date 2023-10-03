@@ -3,6 +3,7 @@
   "version": "2.1.2",
   "description": "react-native country picker",
   "main": "lib/index.js",
+  "source": "src/index.ts",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
