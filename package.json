@@ -1,5 +1,5 @@
 {
-  "name": "react-native-country-picker-modal",
+  "name": "xkelxmc/react-native-country-picker-modal",
   "version": "2.1.0",
   "description": "react-native country picker",
   "main": "lib/index.js",
@@ -9,7 +9,7 @@
     "url": "git+https://github.com/xkelxmc/react-native-country-picker-modal.git"
   },
   "publishConfig": {
-    "@xkelxmc:registry": "https://npm.pkg.github.com"
+    "xkelxmc:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "start": "yarn config:dev && expo start",
