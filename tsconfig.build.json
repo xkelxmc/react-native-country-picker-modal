@@ -1,0 +1,40 @@
+{
+  "include": [
+    "src",
+    "./typings.d.ts"
+  ],
+  "compilerOptions": {
+    "declaration": true,
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "strict": true,
+    "removeComments": true,
+    "jsx": "react-jsx",
+    "target": "es2019",
+    "module": "esnext",
+    "lib": ["esnext", "dom"],
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "importHelpers": false,
+    "alwaysStrict": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictFunctionTypes": true,
+    "resolveJsonModule": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictPropertyInitialization": false
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
